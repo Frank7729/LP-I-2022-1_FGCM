@@ -1,0 +1,136 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3680cf80;
+}
+.logo01{
+    margin-top: 10px;
+}
+.logo01{
+    animation-duration: 3s;
+    animation-name: logo01;
+}
+.logo01{
+    animation-duration: 0.8s;
+    animation-name: latidos,logo01;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes latidos{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes logo01{
+    from{
+        margin-left: -50%;
+        width: 100%;
+    }
+    to{
+        margin-right: 0%;
+        width: 50%;
+    }
+}
+.sociales{
+    margin-top: 15px;
+}
+nav{
+    text-align: center;
+    background-color: orange;
+    height: 40px;
+}
+ul{
+    margin: 0px;
+    padding-top: 10px;
+}
+nav ul li{
+    display: inline;
+    padding: 15px 15px 15px 15px;
+}
+nav ul li:hover{
+    background-color: #3680cf80;
+    padding: 10px 10px 10px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 1px brown;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: white;
+}
+section{
+    display: flex;
+    flex-flow: wrap;
+}
+article{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid;
+    flex: 20%;
+}
+.imagen{
+    text-align: center;
+}
+.imagen img{
+    width: 200px;
+    filter: grayscale();
+}
+.imagen img:hover{
+    transform: rotate(10deg) scale(1.2) translate(20px);
+}
+.f1{
+    filter: grayscale();
+}
+.f1:hover{
+    filter: none;
+}
+.f2{
+    filter: blur(10px);
+}
+.f2:hover{
+    filter: none;
+}
+.f3{
+    filter: invert(80%);
+}
+.f3:hover{
+    filter: none;
+}
+.titulo01{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    75%{
+        font-size: 300%;
+        margin-left: 40%;
+        width: 150%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+footer{
+    background-color: blueviolet;
+    height: 200px;
+}
+#pie{
+    font-size: 90px;
+    text-align: center;
+    margin-top: 50px;
+}

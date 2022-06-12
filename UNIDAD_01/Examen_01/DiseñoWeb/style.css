@@ -1,0 +1,93 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.titulo01{
+    padding: 10px;
+    text-align: center;
+    color: orange;
+}
+nav{
+    text-align: center;
+    background-color: white;
+    height: 50px;
+}
+ul{
+    margin: 0px;
+    padding-top: 20px;
+}
+nav ul li{
+    display: inline;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid orange;
+    border-radius: 6px;
+    margin: 10px;
+}
+nav ul li:hover{
+    background-color: orange;
+    padding: 10px 20px 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 1px brown;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: white;
+}
+section{
+    display: flex;
+    flex-flow: wrap;
+}
+article{
+    margin: 30px;
+    padding: 10px;
+    border-right: 2px solid orange;
+    border-left: 40px solid orange;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+    border-radius: 6px;
+    flex: 30%;
+}
+.subtitulo{
+    font-size: 30px;
+    position: relative;
+    margin-top: -320px;
+    text-align: left;
+    margin-bottom: 180px;
+    margin-left: 430px;
+}
+.textito{
+    font-size: 20px;
+    position: relative;
+    margin-top: -160px;
+    text-align: left;
+    margin-bottom: 150px;
+    margin-left: 430px;
+}
+article nav{
+    font-size: 20px;
+    position: relative;
+    margin-top: -130px;
+    text-align: left;
+    margin-bottom: 90px;
+    margin-left: 380px;
+}
+article nav ul li a:hover{
+    color: white;
+}
+/*.ardi{
+    margin-left: -3%;
+    padding-bottom: 54.5%;
+    border: 10px solid orange;
+    border-radius: 5px;
+}*/
+.imagen{
+    padding: 50px;
+    text-align: left;
+    position: relative;
+}
+.imagen img{
+    width: 350px;
+    position: left;
+}
