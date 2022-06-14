@@ -1,8 +1,8 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
 	host:'localhost',
-	user:'USERNAME_HERE',
-	password:'PASSWORD_HERE',
+	user:'root',
+	password:'',
 	database:'dbexpress'
 });
 connection.connect(function(error){
