@@ -9,9 +9,12 @@ router.get('/main', function(req, res, next) {
   res.render('portalNC');
 });
 router.get('/main01', function(req, res, next) {
-  res.render('dashboard');
+  res.render('registro');
+});
+router.get('/main02', function(req, res, next) {
+  res.render('trámite');
 });
 router.get('/main03', function(req, res, next) {
-  res.render('formCN');
+  res.render('eventos');
 });
 module.exports = router;

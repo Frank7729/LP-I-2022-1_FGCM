@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+  <script src="https://unpkg.com/alpinejs/dist/cdn.min.js" defer></script>
+  <div class="container-full bg-gray-900 text-center text-red-600" style="font-size: 30px;"> REGISTRO DE NUEVO COLEGIADO </div>
+  <div class="container-full text-left bg-gray-300 text-gray-800 m-5"> <b>1.- DATOS PERSONALES </b>  </div>
+  <form class="container-full">
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Nombres
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+        </div>
+        <div class="px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            Apellidos
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+        </div>
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Fecha de Nacimiento
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+        </div>
+        <div class="px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            DNI
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="#">
+        </div>
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Correo Electrónico
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="example@gamil.com">
+        </div>
+        <div class="px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            Número de Celular
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Number">
+        </div>
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Dirección
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+        </div>
+        <div class="px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            Nacionalidad
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+        </div>
+        <div class="px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            Foto
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+        </div>
+        <div class="px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+            Contraseña
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
+          <p class="text-gray-600 text-xs italic">Hazlo tan largo y dificil como quieras</p>
+        </div>
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+            Ciudad
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
+        </div>
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+            Estado
+          </label>
+          <div class="relative">
+            <select class="w-2 bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+              <option>Lima</option>
+              <option>Cusco</option>
+              <option>Juliaca</option>
+            </select>
+
+          </div>
+        </div>
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+            Zip
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
+        </div>
+      </div>
+    </form>
+    <div class="container-full text-left bg-gray-300 text-gray-800 m-5"> <b>2.- FORMACIÓN ACADÉMICA</b> </div>
+    <form class="container-full">
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Educación Primaria
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+        </div>
+        <div class="px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            Educación Secundaria
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+        </div>
+        <div class="px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Educación Superior
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+        </div>
+        <div class="px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            Grados y Títulos
+          </label>
+          <input class="bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+        </div>
+      </div> 
+    </form>
+    <div class="container-full text-left bg-gray-300 text-gray-800 m-5"> <b>3.- EXPERIENCIA PROFESIONAL</b> </div>
+    <div class="container-full text-left bg-gray-300 text-gray-800 m-5"> <b>4.- IDIOMAS EXTRANJEROS Y NATIVOS</b> </div>
+    <div class="container-full text-left bg-gray-300 text-gray-800 m-5"> <b>5.- CURSOS Y SEMINARIOS</b> </div>
+    <div class="container-full">
+      <div style="margin-left: 90%; margin-top: 15px; font-size: 150%; margin-bottom: 15px;">
+        <a href="javascript:abrir()" class="text-white" style="background-color: gray; padding: 10px; border-radius: 10px;">Guardar</a>
+      </div>
+    </div>
+    <div class="mensaje" style="display: none; margin-top: -35%;" id="msj">
+      <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" style="position: absolute;">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+        <div class="container">
+          <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+            <div class="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full" style="margin-right: -510%; border: 3px gray solid;">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                  <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                    <svg class="h-6 w-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Registro</h3>
+                    <div class="mt-2">
+                      <p class="text-sm text-gray-500">¿Está seguro de guardar?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <a href="javascript:abrir_01()" class="w-full inline-flex justify-center rounded-md border shadow-sm px-4 py-2 bg-red-600 text-base font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                  Aceptar</a>
+                <div id="menu" class="absolute text-base font-medium sm:text-sm opacity-0" style="border: 1px; margin-top: -29px;">
+                  <a href="/main" style="margin-left: 20px;">
+                    Aceptar</a>
+                </div>
+                
+                <a href="/main01" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                  Cancelar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="notification" style="display: none; width: 16%; margin-top: -47%; margin-right: 1%;" class="relative mx-auto p-4 text-gray-500 bg-white rounded-lg dark:text-gray-400 dark:bg-gray-800" role="alert">
+        <div class="inline-flex items-center justify-center flex-shrink-0 w-full h-8 text-blue-500 bg-blue-100 rounded-lg dark:bg-blue-800 dark:text-blue-200">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path></svg>
+          <p style="padding-left: 2px;">Mensaje</p>
+        </div>
+      <div class="ml-3 text-sm font-normal" style="padding-bottom: 5px;">¡¡¡ Se Registró Correctamente !!!</div>
+    </div>
+  <script>
+    function abrir(){
+      document.getElementById("msj").style.display="block";
+    }
+    function abrir_01(){
+      document.getElementById("notification").style.display="block";
+      setTimeout("document.getElementById('notification').style.visibility='hidden'",3000);
+      document.getElementById("msj").style.display="none";
+      document.getElementById("menu").style.display="block";
+      setTimeout("document.getElementById('notification').style.visibility='hidden'",3000);
+    }
+
+  </script>
+  </body>
+</html>
