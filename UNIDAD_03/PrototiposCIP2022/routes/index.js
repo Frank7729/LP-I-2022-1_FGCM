@@ -44,13 +44,29 @@ router.post('/main', function (req, res, next) {
 });
 
 router.get('/pages/dashboard', function (req, res, next) {
-  if (!req.session.loggedin) {
+  /*if (!req.session.loggedin) {
     res.redirect('/');
   } else {
     res.locals.email = req.session.email;
     res.locals.rol = req.session.rol;
     res.render('pages/dashboard');
-  }
+  }*/
+
+      res.locals.email = req.session.email;
+      res.locals.rol = req.session.rol;
+      res.locals.loggedin=req.session.loggedin;
+
+  var queries = [
+    "SELECT SUM(costo) as total FROM eventos"
+  ];
+ 
+  //dbConn.query('SELECT SUM(saldo) as total FROM clientes',function(err,rows) {
+  dbConn.query(queries.join(';'),function(err,rows) {
+   //console.log(rows[0].total);
+   if(err) throw err;
+   //console.log(rows[0][0].cantidad);
+   res.render('pages/dashboard',{dataCosto:rows[0]['total']});
+  });
 });
 
 router.get('/logout', function (req, res) {

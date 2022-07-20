@@ -28,7 +28,7 @@ router.post('/main', function(req, res, next) {
           req.session.idu=rows[0]["id"];
           req.session.email=rows[0]["email"];
           req.session.loggedin = true;
-          res.redirect('/dashboard');
+          res.redirect('/pages-dashboard');
         }else{
           req.flash('error', 'El usuario no existe...');
           res.redirect('/login');
@@ -45,18 +45,26 @@ router.get('/dashboard', function(req, res, next) {
   }
 });
 
+router.get('/pages-dashboard', function(req, res, next) {
+  if(!req.session.loggedin){
+    res.redirect('/');
+  }else{
+    res.render('pages/dashboard');
+  }
+});
+
 router.get('/logout', function (req, res) {
   req.session.destroy();
   res.redirect("/login");
 });
 
-router.get('/cliente-list', function(req, res, next) {  
+router.get('/pages-cliente', function(req, res, next) {  
   dbConn.query('SELECT * FROM clientes',function(err,rows)     {
       if(err) {
           req.flash('error', err);
-          res.render('clientes/list',{data:''});   
+          res.render('pages/cliente',{data:''});   
       }else {
-          res.render('clientes/list',{data:rows});
+          res.render('pages/cliente',{data:rows});
       }
   });
 });
